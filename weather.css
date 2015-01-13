@@ -1,0 +1,22 @@
+body{ font-weight: bold;
+	color: blue;
+	font-family: sans-serif;
+	text-align: center;
+	}
+
+#cloudy { 
+background-color: gray;
+background-image: url('cloudy.png');
+}
+
+#index { background: url:('map.png');}
+
+#rainy { background: url('rainy.png');}
+
+#snowy { background: url('snowy.png');}
+
+#sunny {background: url('sunny.png');}
+
+#foggy {background: silver;}
+
+#otherweather {background: pink;}
