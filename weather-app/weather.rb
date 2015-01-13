@@ -33,9 +33,9 @@ post '/weather' do
 	"#{@weather}"
     
 	if (@weather == 'sunny')
-		erb:sunny
+		erb :sunny
         elsif (@weather =='cloudy')
-		erb:cloudy
+		erb :cloudy
         elsif (@weather == 'partly cloudy')
 		erb :cloudy
         elsif (@weather =='rainy')
@@ -44,10 +44,6 @@ post '/weather' do
 		erb :snowy
         elsif (@weather == 'foggy')
 		erb :foggy
-        elsif (@weather == 'stormy')
-        erb :stormy
-        elsif (@weather == 'severe')
-        erb :severe
         else 
 		erb :otherweather
 	end
