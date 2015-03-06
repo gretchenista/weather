@@ -9,7 +9,7 @@ background-color: gray;
 background-image: url('cloudy.png');
 }
 
-#index { background: url:('map.png');}
+#index { background: url('map.png');}
 
 #rainy { background: url('rainy.png');}
 
