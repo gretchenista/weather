@@ -24,8 +24,7 @@ weather.forecasts.each do |forecast|
         end
     
     puts dayName + ' is going to be ' +
-    forecast['text'].downcase + ' with a low of ' + forecast['low'].to_s + '
-    and a high of ' + forecast['high'].to_s
+    forecast['text'].downcase + ' with a low of ' + forecast['low'].to_s + ' and a high of ' + forecast['high'].to_s
     end
 
 def display_weather_message
