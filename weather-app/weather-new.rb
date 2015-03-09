@@ -7,6 +7,15 @@ end
 
 weather = get_location('10022')
 
+puts "Your zipcode please?"
+zipcode = gets
+
+temp = gets.location(zipcode)
+
+message = display.weather(temp)
+puts message
+
+
 today = Time.now.strftime('%w').to_i
 
 weather.forecasts.each do |forecast|
@@ -46,10 +55,3 @@ def display_weather_message
         end
     end
 
-puts "Your zipcode please?"
-zipcode = gets
-
-temp = gets.location(zipcode)
-
-message = display.weather(temp)
-puts message
