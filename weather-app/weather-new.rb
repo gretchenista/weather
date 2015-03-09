@@ -12,7 +12,7 @@ zipcode = gets
 
 temp = gets.location(zipcode)
 
-message = display.weather(temp)
+message = display_weather_message(temp)
 puts message
 
 
