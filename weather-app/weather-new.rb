@@ -1,19 +1,14 @@
 require 'yahoo-weatherman'
 
-def get_location(location)
-    client = Weatherman::Client.new
-    client.lookup_by_location(location)
-end
-
-weather = get_location('10022')
-
 puts "Your zipcode please?"
 zipcode = gets
 
 temp = gets.location(zipcode)
 
-message = display_weather_message(temp)
-puts message
+def get_location(location)
+    client = Weatherman::Client.new
+    client.lookup_by_location(location)
+end
 
 
 today = Time.now.strftime('%w').to_i
@@ -54,4 +49,9 @@ def display_weather_message
         puts "Are you crazy to be in this weather? Stay inside and warm up with cocoa and a good book. Or better yet, move to Florida or Hawaii or fly to the Caribbean, kiddo!"
         end
     end
+    
+    message = display_weather_message(temp)
+puts message
+
+    
 
